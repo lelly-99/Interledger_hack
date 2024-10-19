@@ -13,8 +13,10 @@
   "keywords": [],
   "description": "",
   "dependencies": {
+    "@interledger/open-payments": "^6.13.2",
     "body-parser": "^1.20.3",
     "cors": "^2.8.5",
+    "dotenv": "^16.4.5",
     "express": "^4.21.1",
     "nodemailer": "^6.9.15",
     "pg": "^8.13.0"
