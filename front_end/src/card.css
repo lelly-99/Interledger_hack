@@ -1,0 +1,18 @@
+.card {
+  background-color: black;
+  width: 250px;
+  height: 150px;
+  margin-top: 40px;
+}
+p {
+  color: white;
+  padding-left: 3px;
+  padding-top: 3px;
+  font-size: large;
+}
+.balance {
+  padding-top: 50px;
+}
+.money {
+  padding-left: 20px;
+}
