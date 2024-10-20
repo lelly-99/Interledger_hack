@@ -51,3 +51,78 @@ Make sure you have the following installed:
 ```bash
 git clone https://github.com/interledger_hack.git
 cd interledger_hack
+
+Install dependencies for the backend
+
+Navigate to the backend directory:
+
+cd back_end
+npm install
+
+Install dependencies for the frontend
+
+Navigate to the frontend directory:
+
+cd front_end
+npm install
+
+	Note: The node_modules folder is not included in the repository, so you will need to run npm install to download dependencies.
+
+Usage
+
+Backend (Express + Node.js)
+
+Start the backend server with Nodemon:
+
+cd backend
+npm run start
+
+This will run the backend server and watch for any changes using Nodemon.
+
+Frontend (React)
+
+Start the frontend server:
+
+cd frontend
+npm run dev
+
+Now, your React frontend will run on localhost:5173, and the backend on localhost:3000.
+
+Environment Variables
+
+Create a .env file in the backend directory with the following:
+
+# Open Payments API
+OPEN_PAYMENTS_API_KEY=your-open-payments-api-key
+OPEN_PAYMENTS_API_URL=https://lip.interledger-test.dev/your-account
+OPEN_PAYMENTS_API_KEY_ID=your-open-payments-api-key-id
+
+
+Development
+
+Running the Backend Server
+
+To run the backend in development mode with Nodemon, use:
+
+npm run start
+
+Running the Frontend Server
+
+To run the frontend in development mode:
+
+npm run dev
+
+Both servers will automatically reload when you make changes.
+
+
+How do users without smartphones or internet access access their funds?
+
+Users without smartphones or internet access can use USSD codes to interact with their accounts. They will be able to check their balance, withdraw money, and transfer funds through their mobile carrier’s USSD system.
+
+How does the QR code feature work?
+
+Users can generate a QR code linked to their account, which can be used for:
+
+	•	In-store purchases.
+	•	Withdrawals at stores that support the app.
+
