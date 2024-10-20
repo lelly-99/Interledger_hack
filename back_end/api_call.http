@@ -1,0 +1,7 @@
+
+curl -X POST http://localhost:3000/payment \
+ -H "Content-Type: application/json" 
+ \ -d '{ 
+ "sendingWalletAddressUrl": "https://$ilp.interledger-test.dev/lubasi", 
+ "receivingWalletAddressUrl": "https://$ilp.interledger-test.dev/lee", 
+ "amount": 1000 }'
