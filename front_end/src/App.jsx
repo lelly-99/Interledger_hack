@@ -1,14 +1,15 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import Navbar from "./components/Navbar";
-import DashBoard from "./components/DashBoard";
-import Summary from "./components/Summary";
+import { Outlet } from "react-router-dom";
+// import Summary from "./components/Summary";
 
 function App() {
   return (
     <div className="grid-container">
       <Navbar />
-      <DashBoard />
-      <Summary />
+      {/* <DashBoard /> */}
+      <Outlet/>
+      {/* <Summary /> */}
     </div>
   );
 }
